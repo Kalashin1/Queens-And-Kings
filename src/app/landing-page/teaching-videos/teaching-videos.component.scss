@@ -1,0 +1,23 @@
+
+@mixin mQ($arg){
+    @media screen and (min-width : $arg){
+        @content;
+    } 
+ }
+
+
+.section{
+    background: url(../../../assets/images/video-area-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;   
+
+    @include mQ(200px){
+        top: 13rem
+    }
+}
+
+
+

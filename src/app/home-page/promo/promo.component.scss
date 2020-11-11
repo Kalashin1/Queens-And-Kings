@@ -1,0 +1,48 @@
+.circle-icon{
+    background: #E8B10D;
+    border-radius: 50%;
+    width: 5rem !important; 
+    height: 5rem !important;
+    display: flex;
+    margin: .3rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.promo-image{
+    height: 800px;
+}
+
+@mixin mQ($arg) {
+    @media screen and (max-width : $arg){
+        @content;
+    }
+}
+
+@mixin mQI($arg) {
+    @media screen and (min-width : $arg){
+        @content;
+    }
+}
+
+
+.circle-icon{
+        @include mQ(670px){
+        position: relative;
+        left: 20%
+    }
+}
+
+.promo-image{
+    @include mQI(1200px){
+        height: 600px !important;
+    }
+}
+
+
+@media screen and(min-width: 670px) and (max-width: 1000px){
+    .circle-icon{
+        position: relative;
+        left: 20%;
+    }
+}

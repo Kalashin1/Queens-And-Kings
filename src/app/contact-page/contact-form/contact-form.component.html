@@ -1,0 +1,44 @@
+<div class="contact-form">
+    <div class="row">
+        <div class="col s12 l6 push-l3 m6 push-m3">
+            <div class="white-text font-bold center my-8 text-4xl">
+                {{ contact.title }}
+            </div>
+            <div class="white-text font-bold center my-2 text-xl">
+                {{ contact.message }}
+            </div>
+            <div>
+                <form name="contactForm" novalidate>
+                    <div class="input-field">
+                        <i class="material-icons prefix white-text">person</i>
+                        <input class="border-white" type="text" id="name" name="name">
+                        <label class="white-text" for="name">Name</label>
+                        <!-- <small ng-show="contactForm.name.$touched && contactForm.name.$invalid" class="red-text">Please enter your name</small> -->
+                    </div>
+                   
+                    <div class="input-field">
+                        <i class="material-icons prefix white-text">email</i>
+                        <input class="border-white" type="email" id="email" name="email">
+                        <label class="white-text" for="email">Email</label>
+                        <!-- <small ng-show="contactForm.email.$touched && contactForm.email.$invalid" class="red-text">Please enter your email</small> -->
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix white-text">present_to_all</i>
+                        <input class="border-white" type="text" id="subject" name="subject">
+                        <label class="white-text" for="subject">Subject</label>
+                        <!-- <small ng-show="contactForm.subject.$touched && contactForm.subject.$invalid" class="red-text">Please enter a subject</small> -->
+                    </div>
+                    <div class="input-field">
+                        <i class="material-icons prefix white-text">message</i>
+                        <textarea class="materialize-textarea" name="message"  id="message" rows="30" cols="10"></textarea>
+                        <label class="white-text" for="message">Your Message</label>
+                        <!-- <small ng-show="contactForm.message.$touched && contactForm.message.$invalid" class="red-text">Please enter your message</small> -->
+                    </div>
+                    <div class="input-field center-align">
+                        <input type="submit"  class="btn-large yellow darken-2 font-bold white-text waves-effect waves-light" value="SUBMIT">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

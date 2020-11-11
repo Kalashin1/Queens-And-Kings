@@ -1,0 +1,23 @@
+
+@mixin size($arg){
+    @media screen and (min-width: $arg){
+        @content
+    }
+}
+
+
+.top-wrapper{
+    @include size(1000px){
+        width: 80%;
+    }
+}
+
+.email-and-phone{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 2rem;
+        
+    div{        
+        padding-left : 1rem    
+    }
+}

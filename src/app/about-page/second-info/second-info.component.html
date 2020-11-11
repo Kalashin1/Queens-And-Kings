@@ -1,0 +1,46 @@
+<div class="my-wrapper grid grid-cols-1 sm:grid-cols-2">
+    <div class="my-photo p-4 flex flex-column hide-on-small-only" style="z-index: 10;flex-direction: column;">
+        <img [src]="secondInfo.photoUrl" class="responsive-img mb-16 mt-48" />
+        <div class="awards-section mt-16 flex justify-content-between">
+            <div class="col s4 white-text mx-4">
+                <h3 class="text-4xl font-bold text-center my-2">
+                    100
+                </h3>
+                <h3 class="text-md text-center font-bold">
+                    Students
+                </h3>
+            </div>
+            <div class="col s4 white-text mx-4">
+                <h3 class="text-4xl font-bold text-center my-2">
+                    10
+                </h3>
+                <h3 class="text-md text-center font-bold">
+                    Teachers
+                </h3>
+            </div>
+            <div class="col s4 white-text mx-4">
+                <h3 class="text-4xl font-bold text-center my-2">
+                    50
+                </h3>
+                <h3 class="text-md text-center font-bold">
+                    Awards
+                </h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-4 font-bold px-8 white-text" style="z-index: 10">
+        <div class="text-2xl text-center mx-2 my-4">
+            {{ secondInfo.title }}
+        </div>
+        <div class="text-sm my-2">
+            {{ secondInfo.details }}
+        </div>
+        <div class="text-sm my-2">
+            {{ secondInfo.details }}
+        </div>
+        <div class="text-sm hide-on-med-only my-2 hide-on-med-and-down">
+            {{ secondInfo.details }}
+        </div>
+    </div>
+</div>

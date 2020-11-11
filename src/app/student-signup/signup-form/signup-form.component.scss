@@ -1,0 +1,11 @@
+#submit{
+    background: #1b5e20;
+    color: #f4f4ef;
+    transition: all .4s;
+
+
+    &:hover{
+        background: #490101;
+        color: white;
+    }
+}

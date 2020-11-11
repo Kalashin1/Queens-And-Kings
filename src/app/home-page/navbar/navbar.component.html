@@ -1,0 +1,43 @@
+<div class="font-bold">
+    <div class="container top-wrapper">
+        <div class="nav-wrapper hide-on-med-and-down relative email-and-phone transparent z-depth-0">
+            <div class="flex" [ngStyle]="divOneStyles">
+                <a href="" class="brand-logo capitalize text-xl hide-on-small-only green-text text-darken-3">{{schoolName}}</a>
+            </div>
+            <div *ngFor="let contact of contacts">
+                <a href="" class="brand-logo hide-on-small-only green-text text-darken-3">
+                    <span class="text-xl block">
+                        {{contact.title}}
+                    </span>
+                    <i class="material-icons left">{{contact.icon}}</i>
+                    <span>{{contact.contact}}</span>
+                </a>
+            </div>
+        </div>
+        <nav class="nav-wrapper green darken-3">
+            <a class="brand-logo hide-on-med-and-up">
+                Q & K
+            </a>
+            <a href="#" class="sidenav-trigger hide-on-large-only white-text" data-target="mobile-nav">
+                <i class="material-icons">menu</i>
+            </a>
+            <ul class="desktop-nav left hide-on-med-and-down">
+                <li *ngFor="let link of links"><a href="" class="white-text" routerLink="">{{link}}</a></li>
+             </ul>   
+            
+            <ul class="hide-on-large-only sidenav" id="mobile-nav">
+                <li *ngFor="let link of links">
+                    <a href="" class="green-text text-darken-4" routerLink="{{link}}">
+                        {{link}}
+                    </a>
+                </li>
+            </ul>
+
+            <div class="right">
+                <a class="" href="">
+                    <i class="material-icons left">search</i>
+                </a>
+            </div>
+        </nav>
+    </div>
+</div>

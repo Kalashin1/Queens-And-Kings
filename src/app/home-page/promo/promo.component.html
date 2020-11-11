@@ -1,0 +1,32 @@
+<section id="promos">
+    <div class="grid grid-cols-1 sm:grid-cols-3 px-4 ">
+        <div class="sm:col-span-2">
+            <h3 class="m-4 text-3xl font-bold green-text text-darken-4 center-align">
+                {{title}}
+            </h3>
+            <div class="m-4 text-xl font-bold green-text text-darken-4 left-align">
+                {{text}}
+            </div>
+            <div class="grid grid-cols-2">
+                <div class="block xl:flex" style="flex-direction: row;" *ngFor="let promo of promos">
+                    <div class="circle-icon z-depth-1-half m-4">
+                        <i class="material-icons white-text" style="font-size: 2rem;">{{promo.icon_name}}</i>
+                    </div>
+                    <div class="green-text text-container text-darken-4 font-bold m-4 w-4/4 sm:w-4/5 xl:w-3/5">
+                        <h3 class="text-xl xl:text-3xl m-4 xl:center-align">
+                            {{promo.header}}
+                        </h3>
+                        <h5 class="text-md mt-2">
+                            {{promo.text}}
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <a href="">
+                <img [src]="imageUrl" class="promo-image w-auto hide-on-small-only object-cover">
+            </a>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,14 @@
+@mixin mQ($arg){
+    @media screen and (min-width: $arg){
+        @content
+    }
+}
+
+.banner{
+    background: url(../../../assets/images/element5-digital-OyCl7Y4y0Bk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding-top: 7rem;
+}

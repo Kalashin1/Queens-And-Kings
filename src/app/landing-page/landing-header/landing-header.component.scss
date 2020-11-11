@@ -1,0 +1,45 @@
+
+header{
+    background: url(../../../assets/images/home-banner-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+@media screen and (min-width: 1000px){
+    .facility{
+        position: relative;
+        top: 6rem !important
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-width: 570px){
+    .facility{
+        position: relative;
+        top: 13rem
+    }
+}
+
+@media screen and (max-width: 570px) and (min-width : 400px){
+    .facility{
+        position: relative;
+        top: 7rem;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .facility{
+        position: relative;
+        top: 2rem;
+    }
+}
+
+// @media screen and (min-width: 1000px){
+//     .facility{
+//         position: relative;
+//         top: 6rem;
+//     }
+// }

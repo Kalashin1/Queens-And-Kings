@@ -1,0 +1,38 @@
+<div id="footer">
+    <div class="row" [ngStyle]="rowStyles">
+        <div class="col s12 m2 l2" *ngFor="let footerLink of footerLinks">
+            <nav class="transparent z-depth-0">
+                <span class="text-2xl font-bold text-white">{{footerLink.title}}</span>
+                
+            </nav>
+            <ul class="text-md font-bold text-white">
+                <li class="my-4" *ngFor="let link of footerLink.links"><a href="">{{link}}</a></li>
+            </ul>
+        </div>
+        <div class="col s12 m6 l6">
+            <div class="card transparent z-depth-0">
+                <div class="text-2xl font-bold text-white mt-4">{{information.title}}</div>
+                <div class="card-content">
+                    <p class="text-md font-bold text-md text-white mt-4">{{information.text}}</p>
+                </div>
+            </div>
+
+            <form>
+                <div class="input-field">
+                    <input type="email" name="email" id="newsletterEmail" />
+                    <label for="newsletterEmail">Email</label>
+                </div>
+                <div class="input-field">
+                    <input type="submit" id="newsletter-submit" class="btn-large text-xl font-bold" name="submit" />
+                </div>
+            </form>
+
+        </div>
+        <div class="s12 center-align">
+            <span class="center-align text-lg block font-bold text-red-800 xl:text-white" [ngStyle]="copyrightStyles">
+                &copy;, 2020 Queens And Kings
+            </span>
+        </div>
+    </div>
+    
+</div>

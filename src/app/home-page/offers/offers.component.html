@@ -1,0 +1,19 @@
+<section id="offers">
+    <div class="grid grid-cols-2 sm:grid-cols-4">
+        <div  *ngFor="let offer of offers;">
+            <div style="background-color: {{offer.color}}; height: 240px">
+                <div class="p-4">
+                    <h3 class="white-text m-2 center-align">
+                        <span class="material-icons" style="font-size : 5rem">{{offer.icon_name}}</span>
+                    </h3>
+                    <h3 class="white-text text-xl font-bold m-4 center-align">
+                        {{offer.header}}
+                    </h3>
+                    <h5 class="white-text text-md font-bold m-4 center-align">
+                        {{offer.text}}
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

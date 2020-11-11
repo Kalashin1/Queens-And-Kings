@@ -1,0 +1,19 @@
+<nav class="nav-wrapper transparent">
+    <a class="brand-logo ml-4 yellow-text bold" href="#">Q&K</a>
+
+    <a class="sidenav-trigger" href="#" data-target="landing-mobile-nav">
+        <i class="material-icons text-green-800">menu</i>
+    </a>
+
+    <ul class="desktop-nav right hide-on-med-and-down">
+        <li *ngFor="let link of links"><a href="" class="white-text bold" routerLink="">{{link}}</a></li>
+     </ul>   
+    
+    <ul class="hide-on-large-only sidenav" id="landing-mobile-nav">
+        <li *ngFor="let link of links">
+            <a href="" class="green-text bold text-darken-4" routerLink="{{link}}">
+                {{link}}
+            </a>
+        </li>
+    </ul>
+</nav>

@@ -1,0 +1,33 @@
+#footer{
+    background: url(../../assets/images/footer-bg.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 700px;
+    
+
+    .row{
+        
+        #newsletter-submit{
+            background: #1b5e20;
+            color: #f4f4ef;
+            transition: all .4s;
+            border-radius: .5rem;
+        
+        
+            &:hover{
+                background: #ffffff;;
+                color:#490101;;
+            }
+        }
+    }
+
+
+}
+
+
+@media screen and (max-width: 670px){
+    #footer{
+        height: max-content !important;
+    }
+}

@@ -1,0 +1,19 @@
+<section class="grid grid-cols-1 sm:grid-cols-2">
+    <div class="p-4 font-bold">
+        <div class="text-2xl text-center text-green-900 mx-2 my-4">
+            {{ firstInfo.title }}
+        </div>
+        <div class="text-sm text-green-900 my-2">
+            {{ firstInfo.details }}
+        </div>
+        <div class="text-sm text-green-900 my-2">
+            {{ firstInfo.details }}
+        </div>
+        <div class="text-sm hide-on-med-only text-green-900 my-2">
+            {{ firstInfo.details }}
+        </div>
+    </div>
+    <div class="pics mx-2 flex justify-center align-items-center">
+        <img [src]="firstInfo.photoUrl" class="img" />
+    </div>
+</section>

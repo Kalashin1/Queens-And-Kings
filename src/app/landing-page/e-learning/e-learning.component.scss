@@ -1,0 +1,36 @@
+@media screen and (max-width : 800px){
+    .icon-circle{
+        align-items: center;height: 3rem; width: 3rem;
+        i{
+            font-size: 1rem;
+        }
+    }
+
+    .section{
+        position: relative;
+        top: 13rem
+    }
+}
+
+@media screen and (max-width: 570px){
+    .section{
+        position: relative;
+        top: 19rem !important;
+    }
+}
+
+
+@media screen and (min-width : 800px){
+    .icon-circle{
+        align-items: center;height: 3.5rem; width: 3.5rem;
+        i{
+            font-size: 1.5rem;
+        }
+    }
+
+    .section{
+        position: relative;
+        top: 9rem !important
+    }
+}
+
