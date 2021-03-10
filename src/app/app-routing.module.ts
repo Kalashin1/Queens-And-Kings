@@ -8,14 +8,14 @@ import { ContactPageComponent } from './contact-page/contact-page.component'
 
 
 const routes: Routes = [
-    
+
     { path : 'landing', component :LandingPageComponent},
     { path : 'about', component: AboutPageComponent },
     { path : 'home', component : HomePageComponent },
     { path : 'enroll-student', component : EnrollStudentComponent},
-    { path: 'contact', component: ContactPageComponent}
-    // { path : '', redirectTo : 'home', pathMatch : 'full'}
-    
+    { path: 'contact', component: ContactPageComponent},
+    { path : '', redirectTo : 'home', pathMatch : 'full'}
+
 ];
 
 @NgModule({

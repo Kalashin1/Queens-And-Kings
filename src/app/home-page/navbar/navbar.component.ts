@@ -12,12 +12,12 @@ export class NavbarComponent implements OnInit {
     { title : "Email", contact : "email@theQueensAndKings.com", icon : "email"},
     { title : "Phone", contact : "+234567890", icon : "phone"}
   ];
-  links: string[] = ["Home", "About", "Contact", "Login"];
-  
+  links: string[] = ["home", "about", "contact", "enroll-student"];
+
   constructor() { }
 
   ngOnInit(): void {
-    
+
   }
 
 }

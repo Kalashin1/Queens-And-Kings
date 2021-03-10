@@ -22,12 +22,12 @@
                 <i class="material-icons">menu</i>
             </a>
             <ul class="desktop-nav left hide-on-med-and-down">
-                <li *ngFor="let link of links"><a href="" class="white-text" routerLink="">{{link}}</a></li>
+                <li *ngFor="let link of links"><a href="" class="capitalize white-text" routerLink="/{{link}}">{{link}}</a></li>
              </ul>   
             
             <ul class="hide-on-large-only sidenav" id="mobile-nav">
                 <li *ngFor="let link of links">
-                    <a href="" class="green-text text-darken-4" routerLink="{{link}}">
+                    <a href="" class="green-text capitalize text-darken-4" routerLink="/{{link}}">
                         {{link}}
                     </a>
                 </li>
